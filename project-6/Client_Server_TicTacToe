@@ -1,0 +1,8 @@
+In this exercise, you are asked to modify the architecture of this software to a client-server architecture. The requirements of the system are as follows:
+- Your server must be able to support multiple clients (i.e. implement a thread pool)
+- You must use the MVC design pattern
+- You must use object serialization for communication between the server and clients
+- Your design must closely follow the SOLID Principles
+Task 1 – Design: Create a high-level class diagram. Your design must clearly show the different packages for client and server side of the system. The MVC design must also be clear in your diagram.
+Task 2 – Development: Implement your design from task 1.
+Bonus marks: Having the client(s) and the server running on different machines. At least two machines; one server and one for the clients.
