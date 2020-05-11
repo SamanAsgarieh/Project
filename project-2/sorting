@@ -1,0 +1,1 @@
+In this exercise your task is to add a new algorithm to your application from Exercise 1 called SelectionSorter that uses selection-sort and can be used by the client class without making any changes to the class MyVector<E>.
