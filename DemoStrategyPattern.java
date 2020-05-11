@@ -1,7 +1,11 @@
 /* ENSF 480 - Lab 5 - Exercise A and B
  * Created by M. Moussavi, October 2018
  */
-
+/**
+ * this class contains the main method, which creates a vector object.
+ * Then, by randomly creating lists of numbers, and passing
+ * them to sorter classes, it sorts the lists.
+ */
 import java.util.Random;
 public class DemoStrategyPattern {
 	public static void main(String[] args) {
@@ -46,9 +50,21 @@ public class DemoStrategyPattern {
 			v2.setSortStrategy(new InsertionSorter<Integer>());;
 			v2.performSort();
 	        System.out.println("\nThe values in MyVector object v2 after performing InsertionSorter is:");
-			v2.display();
+			v2.display();	
+MyVector<Integer> v3 = new MyVector<Integer> (50);
 			
-			
-			
+			// populate v2 with 5 randomly generated numbers
+			for(int i = 4; i >=0; i--) {
+				Item<Integer> item;
+				item = new Item<Integer> (Integer.valueOf(rand.nextInt(50)));
+				v3.add(item);
+				}
+			   
+		        System.out.println("\nThe original values in v3 object are:");
+				v3.display();
+				v3.setSortStrategy(new SelectionSort<Float>());;
+				v3.performSort();
+		        System.out.println("\nThe values in MyVector object v3 after performing SelectionSort is:");
+				v3.display();
 	}
 }

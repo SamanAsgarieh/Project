@@ -1,7 +1,14 @@
 import java.util.ArrayList;
 import java.util.Comparator;
-
+/**
+ * sorts list passed to it by bubble sort algorithm.
+ * 
+ */
 public class InsertionSorter<T> extends Sorter {
+	/**
+	 * insertion sort method.
+	 * @param list
+	 */
 	 void insertSort(ArrayList<Item> list) 
 	    { 
 	        int n = list.size(); 
@@ -9,10 +16,6 @@ public class InsertionSorter<T> extends Sorter {
 	        { 
 	            Item key = list.get(i); 
 	            int j = i-1; 
-	  
-	            /* Move elements of arr[0..i-1], that are 
-	               greater than key, to one position ahead 
-	               of their current position */
 	            while (j>=0 && list.get(j).compareTo(key)>=0) 
 	            { 
 	                list.set(j+1,list.get(j)); 
@@ -20,11 +23,10 @@ public class InsertionSorter<T> extends Sorter {
 	            } 
 	            list.set(j+1, key); 
 	        } 
-	    }   
-       
-  
-           
-          
+	    }          
+	 /**
+		 * this method calls the method above to sort the passed arraylist 
+		 */   
 	@Override
 	public void sort(ArrayList list) {
 		// TODO Auto-generated method stub

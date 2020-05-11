@@ -1,6 +1,13 @@
 import java.util.ArrayList;
-
+/**
+ * sorts list passed to it by bubble sort algorithm.
+ * 
+ */
 public class BubbleSorter<T> extends Sorter {
+	/**
+	 * bubble sort method.
+	 * @param list
+	 */
 	 public static void bubbleSort(ArrayList<Item> list)
 	  {
 	        Item temp;
@@ -20,7 +27,9 @@ public class BubbleSorter<T> extends Sorter {
 	        }
 
 	  }
-
+	 /**
+		 * this method calls the method above to sort the passed arraylist 
+		 */
 	@Override
 	public void sort(ArrayList list) {
 		// TODO Auto-generated method stub
