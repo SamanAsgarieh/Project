@@ -1,0 +1,19 @@
+Assume you are working on an application that allows its clients to use different sort methods for a generic collection class called MyVector<E>. For the purpose of this exercise you just need to implement two sort methods: bubble sort, and insertion sort. However, your design must be flexible for possible future changes such that a new sort method can be added without any changes to class MyVector or its possible descendants.
+Please proceed as follows:
+1. Download DemoStrategyPattern.java form D2L. This file provides a client class in Java that must be able to use any sort techniques at the runtime.
+2. Download file called Item.java. This is a class that represents a generic class that is bound only to Numeric objects. It means its private data member item can be any Java Numeric type and its descendants, which include: Integers, Doubles, Floats, etc.
+Note: This class needs to implement the Comparable Java interface to be able to work properly.
+3. Now your program must have the following classes:
+a. Class MyVector<E> which is bounded to only Java Number type and its descendants. This class should the following private data members:
+i. storageM of type ArrayList<Item<E>> that provides space for an array of certain size (more data member as needed).
+ii. sorter that references to an object of class Sorter.
+Class MyVector should also have at least two constructors as follows:
+• A constructor that receives only an integer argument, n, to allocate memory for an array with n elements.
+• A constructor that receives only an ArrayList object, arr, and makes storageM an exact copy of arr.
+Also, class MyVector must have at least the following methods that are used in the client class DemoStrategyPattern:
+public void add(Item<E> value)- That allows to add a new Item<E> value to storageM
+public void setSortStrategy(Sorter <E> s) - That allows its private data member register with an object that implements Sorter.
+Page 5 of 16
+public void performSort() - That allows sort method of any sorter object to be called.
+public void display() - That displays data values stored in storage on the screen in one line. For example: 1.0 2.0 3.0 4.0 5.0
+b. Two Concrete classes called BubbleSorter and InsertionSorter that one implement bubble sort and insertion sort algorithms respectively.
