@@ -1,0 +1,1 @@
+The concept of a decorator focuses on dynamically adding new futures/attributes to an object without affecting the existing code. The Decorator patter should be used when object responsibilities/features should be dynamically changed, and the concrete implementation should be decoupled from these features.
