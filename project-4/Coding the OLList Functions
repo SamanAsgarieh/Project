@@ -1,0 +1,2 @@
+The given OLList::destroy function doesn’t do the right job to remove dynamically allocated nodes of a linked list. In fact the given code for the OLList::destroy function causes a memory leak. Your job is to rewrite the definition of OLList::destroy so that it does what it is supposed to do.
+The given OLList::remove function doesn’t do the right job to remove some nodes (only removes the nodes located at the beginning of the list properly). There is a missing code segment that you should add.
